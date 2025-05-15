@@ -1,0 +1,324 @@
+.selta img{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+body {
+    font-family: Arial,sans-serif;
+    background-color: rgb(123, 123, 124);
+    margin: 0;
+    color: white;
+}
+header {
+    background-color: rgb(179, 179, 179);
+    margin-bottom: 0;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px;
+}
+a span {
+    align-items: center;
+    align-content: center;
+    color: black
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+nav.selta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    white-space: nonrap;
+    color: white;
+}
+nav .selta img {
+    height: 100px;
+    width: auto;
+
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav ul li a {
+    color: #69c6f1;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px; /* Sudut membulat */
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: rgba(red, green, blue, alpha);
+}
+nav ul li a {
+    background-color: rgb(49, 47, 49);
+    color: rgb(253, 253, 255);
+    font-weight: bold;
+}
+/* Hero Section */
+
+.hero img {
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+.hero .hero-text h1 {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.hero .hero-text p {
+    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: white;
+}
+.hero .hero-text a {
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: rgb(165, 165, 165);
+}
+.about {
+    padding: 20px 20px;
+    background-color :aliceblue ;
+    padding-left: 40px;
+    padding-right: 4opx;
+}
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.section-title {
+    color: rgb(61, 59, 59);
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+.section-title {
+    color: rgb(61, 55, 55);
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr repeat(1,2fr);
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+    padding: 0 20px;
+}
+.about-left ,.about-right   {
+    text-align: justify;
+}
+
+.about-right h2, .about-right .text {
+    text-align: center;
+}
+
+.about-left h3,.about-right h3 {
+    color: black;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.about-left p,.about-right p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.about-left ul li span {
+    color: black;
+    margin-right: 10px;
+    font-size: 10px;
+}
+.logo-container {
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    margin: 5px;
+    background-color: black;
+    box-shadow: 0 2px 4px rgb (0,0,0,0,1);
+}
+
+footer{
+width: 100%;
+bottom: 0;
+background: linear-gradient(to right, #69c6f1, #69c6f1);
+padding: 100px 0 30px;
+font-size: 2rem;
+line-height: 20px;
+}
+
+.footer_container{
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+}
+.footer-col{
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-col:hover{
+    color: aqua;
+    transition: all 1.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.footer p{
+    padding: 1rem;
+    color: #69c6f1;
+}
+.footer_container img{
+    max-width: 220px;
+    background-size: cover;
+
+}
+
+.logo-wid{
+    max-width: 50px;
+    filter: grayscale();
+    transition: all 0.7s;
+}
+.logo-wid:hover{
+    filter: none;
+    transition: all 0.7s;
+}
+
+.logo-skl:hover{
+    transform: scale(1.2s);
+    box-shadow: 0 10px 40px rgb(123, 123, 124);
+}
+.card {
+    background-color: rgb(19, 19, 19);
+    border: 1px solid dd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(171, 171, 211);
+    margin: 13px;
+    padding: 23px;
+    width: 42%;
+}
+/* Galery */
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: rgb(139, 139, 139);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: rgb(139, 139, 139);
+    color: white;
+}
+
+.Galery {
+    display: grid;
+    grid-template-columns:3fr repeat(2, 3fr);
+}
+
+.item {
+    position: relative;
+    padding-top: 30%; /* Maintain square aspect ratio */
+}
+
+.item img {
+    position: absolute;
+    top:  0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;/* Ensure the image covers the entire square */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: tramsform 0.3s ease;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+}
+
+#secondary-nav1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.footer {
+    max-width: auto;
+    margin: auto;
+    padding: 1rem;
+    background-color: rgb(78, 77, 77);
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.foot-container {
+    /*display: grid;*
+    grid-template-columns: repeat(4, 1fr);*/
+    gap: 1rem;
+    background-color: var(--BackGroundUtama);
+    max-width: auto;
+    margin: auto;
+}
+.foot-page p {
+  /*  border-left: 1px solid var(--BackGroundSet);*/
+    padding: 10px;
+    text-align: justify;
+    color: black;
+}
+.foot-btn {
+    background-color: beige;
+}
+.foot-button {
+    display: inline-block;
+    background: rgb(78, 77, 77);
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.foot-text .foot-button:hover{
+    background-color: rgb(78, 77, 77);
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+.Copy p {
+    text-align: center;
+    color: black;
+}
